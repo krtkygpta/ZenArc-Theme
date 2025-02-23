@@ -1,0 +1,52 @@
+#zen-workspaces-button {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border-radius: var(--zen-border-radius) !important;
+  border: 1px solid #ffffff0c !important;
+}
+
+@media (-moz-bool-pref: "zen.theme.pill-button") {
+  #PanelUI-zen-workspaces-list toolbarbutton {
+    &.zen-workspace-button[active="true"] .zen-workspace-icon::before {
+      background-color: transparent !important;
+    }
+  }
+
+  #PanelUI-zen-workspaces-list toolbarbutton {
+    & .zen-workspace-icon {
+      border: 3px solid var(--zen-colors-border) !important;
+    }
+  }
+  #PanelUI-zen-workspaces-list toolbarbutton {
+    &.zen-workspace-button[active="true"] .zen-workspace-icon {
+      border: 3px solid var(--toolbarbutton-icon-fill-attention) !important;
+    }
+  }
+}
+#zen-workspaces-button {
+  .subviewbutton {
+    &[active="true"] {
+      background: rgba(255, 255, 255, 0.1) !important;
+      transition: 0.3s !important;
+      border: 1px solid #ffffff0a !important;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062) !important;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2) !important;
+      transition: 0.3s !important;
+    }
+
+    &:after {
+      display: none !important;
+    }
+  }
+}
+/* makes the icons look nicer*/
+.zen-workspace-icon {
+  filter: saturate(140%) brightness(110%) !important;
+  opacity: 1 !important;
+}
+/* Adjust icon size relative to the button size */
+#zen-workspaces-button .subviewbutton .zen-workspace-icon {
+  transition: font-size 0.3s ease;
+}

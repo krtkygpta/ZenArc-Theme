@@ -1,0 +1,32 @@
+
+* {
+  /* Colors */
+  --zenarc-primary-color: var(--zenarc-accent-color, var(--zen-primary-color));
+  --zenarc-colors-primary: color-mix(in srgb, var(--zenarc-primary-color) 50%, black 50%);
+  --zenarc-colors-secondary: color-mix(in srgb, var(--zenarc-colors-primary) 20%, white 80%);
+  --zenarc-colors-tertiary: color-mix(in srgb, var(--zenarc-primary-color) 2%, white 98%);
+  --zenarc-colors-primary-foreground: color-mix(in srgb, var(--zenarc-primary-color) 80%, white 20%);
+  --zenarc-colors-transparent: color-mix(in srgb, var(--zenarc-primary-color) 60%, black 10%);
+
+  @media (prefers-color-scheme: dark) {
+    --zenarc-colors-primary: color-mix(in srgb, var(--zenarc-primary-color) 20%, var(--zen-dark-color-mix-base) 80%);
+    --zenarc-colors-secondary: color-mix(in srgb, var(--zenarc-primary-color) 30%, var(--zen-dark-color-mix-base) 70%);
+    --zenarc-colors-tertiary: color-mix(in srgb, var(--zenarc-primary-color) 1%, var(--zen-dark-color-mix-base) 99%);
+    --zenarc-colors-primary-foreground: color-mix(in srgb, var(--zenarc-primary-color) 80%, white 20%);
+    --zenarc-colors-transparent: color-mix(in srgb, var(--zenarc-primary-color) 60%);
+
+    @media (-moz-bool-pref: 'zen.theme.color-prefs.colorful') {
+      --zenarc-colors-primary: color-mix(in srgb, var(--zenarc-primary-color) 50%, black 50%);
+      --zenarc-colors-secondary: color-mix(in srgb, var(--zenarc-primary-color) 40%, black 60%);
+      --zenarc-colors-tertiary: color-mix(in srgb, var(--zenarc-primary-color) 15%, black 85%);
+      --zenarc-colors-primary-foreground: color-mix(in srgb, var(--zenarc-primary-color) 80%, white 20%)
+      --zenarc-colors-transparent: color-mix(in srgb, var(--zenarc-primary-color) 80%);
+    }
+  }
+
+  /* Glass effect */
+  --zenarc-glass-background: color-mix(in srgb, var(--zenarc-colors-secondary) 75%, transparent);
+  --zenarc-glass-blur-radius: var(--glass-blur-radius, 10px);
+  --zenarc-glass-shadow-size: var(--glass-shadow-size, 10px);
+  --zenarc-glass-shadow-opacity: var(--glass-shadow-opacity, 75%);
+}
