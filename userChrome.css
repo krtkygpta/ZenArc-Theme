@@ -77,6 +77,7 @@ scrollbox:nth-child(5) {
 {
   
 /* Turn workspace indicator (icon + name) into a fake tab separator */
+#zen-current-workspace-indicator, /* Support pre v1.8 */
 #zen-current-workspace-indicator-container {
   all: unset !important;
 
