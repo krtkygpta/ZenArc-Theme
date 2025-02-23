@@ -53,15 +53,15 @@
   /* ==CtrllTabv == */
   .ctrlTab-preview:focus > .ctrlTab-preview-inner,
   #ctrlTab-showAll:focus {
-    background-color: var(--zenarc-secondary-color) !important;
+    background-color: var(--zenarc-colors-secondary) !important;
     text-shadow: none;
-    border-color: var(--zenarc-tertiary-color) !important;;
+    border-color: var(--zenarc-colors-tertiary) !important;;
     border-radius: 10px !important;
     
   }
   #ctrlTab-panel {
     --panel-border-radius: 24px !important;
-    --panel-background: var(--zenarc-accent-color-dark-transparent) !important;
+    --panel-background: var(--zenarc-colors-transparent) !important;
   }
   .ctrlTab-preview:hover {
     border: none !important;

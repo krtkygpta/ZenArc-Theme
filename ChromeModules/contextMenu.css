@@ -60,12 +60,11 @@ Hiding Unnecessary Context Menu Items
     #context_undoCloseTab,
     #context_closeDuplicateTabs[disabled="true"],
     #context_zenSplitTabs[disabled="true"],
-    #context_closeTab,
+/*     #context_closeTab, */
 
     /* Sidebar toolbar options */
     #toggle_toolbar-menubar,
     #zen-toolbar-context-tabs-right,
-    #zen-context-menu-compact-mode,
     #toolbar-context-undoCloseTab,
     #toolbar-context-selectAllTabs,
     #toolbar-context-bookmarkSelectedTab,
@@ -184,3 +183,11 @@ Hiding Unnecessary Context Menu Items
 }
 
 /* Credit: @jasper34 on discord */
+
+*{
+    
+}
+menupopup {
+    
+    --panel-background: color-mix(in srgb, var(--zenarc-primary-color) 23%, black 74%) !important;
+}

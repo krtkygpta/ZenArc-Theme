@@ -7,12 +7,10 @@ as they use the correct format.
 
 * {
   /* Accent color */
+  
   --zenarc-accent-color: var(--zen-primary-color);
-  --zenarc-accent-color-dark-transparent: color-mix(in srgb, var(--zenarc-accent-color) 15%, black 50%);
-  --zenarc-pages-accent-color: #ffaaaa;
-  --zenarc-secondary-color: color-mix(in srgb, var(--zenarc-accent-colour) 80%, black);
-  --zenarc-tertiary-color: color-mix(in srgb, var(--zenarc-accent-colour) 80%, white);
-
+  /* --zenarc-secondary-color: color-mix(in srgb, var(--zenarc-accent-colour) 80%, black); */
+  /* --zenarc-tertiary-color: color-mix(in srgb, var(--zenarc-accent-colour) 80%, white); */
   /* zenarc Glass Effect */
   --glass-blur-radius: 100px;
   --glass-shadow-size: 10px;

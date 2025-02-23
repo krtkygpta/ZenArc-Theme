@@ -1,41 +1,74 @@
-# ZenArc
+# ZenArc Browser Theme
 
-A Zen theme not inspired by Arc
-> Tested on Twilight 1.8t
+A minimalist Zen-inspired browser theme focused on clean aesthetics and functionality. Compatible with Twilight 1.8t.
 
-## Features
-- Clean and minimalistic design
-- Customizable color schemes
-- Transparency All throughout the UI (WIP)
+## Overview
 
-### FindBar
+ZenArc delivers a modern, distraction-free browsing experience with thoughtfully designed UI elements. The theme emphasizes visual harmony while maintaining full browser functionality.
+
+## Key Features
+
+### Visual Elements
+- **Clean, Minimalist Design**: Streamlined interface elements that reduce visual clutter
+- **Dynamic Transparency**: Elegant transparency effects throughout the UI (Work in Progress)
+- **Blur Effects**: Sophisticated blur on urlbar and expanded sidebar for depth
+- **Zen Accent Integration**: Seamlessly follows your chosen Zen accent theme
+
+### Enhanced Components
+
+#### FindBar
+A redesigned search experience with improved visibility.  
+*Credit: Natsumi*
+
 ![Made some tweaks to the findbar, use zenarc.findbar.disabled as false](images/image.png)
-Credit: Natsumi
-### Urlbar
-![alt text](images/image-2.png)
 
-### Context Menu
-![alt text](images/image-3.png)
+#### URL Bar
+Clean and intuitive address bar design.
 
-### Bookmarks
-![alt text](images/image-5.png)
-
-### Other stuff
-- Audio Visualiser
-- New icons
-- Blur on urlbar and sidebar expanded
-- Follows Zen accent theme
-- Better pdf viewer
+![Enhanced URL Bar Design](images/image-2.png)
 
 
-## Installation
-1. Go to profiles folder
-2. Make a folder as "chrome"
-3. Paste the files into the folder
-4. Restart Browser
+#### Context Menu
+Streamlined right-click menu interface.
 
-## Configs
-1. Go to about:config
-2. Search for these and set to boolean true
-![alt text](images/image-6.png)
+![Context Menu Design](images/image-3.png)
 
+
+#### Bookmarks
+Improved bookmark management and visualization.
+
+![Bookmarks Interface](images/image-5.png)
+
+
+### Additional Features
+- **Audio Visualizer**: Visual representation of audio playback
+- **Custom Icons**: Fresh icon set for a cohesive look
+- **Enhanced PDF Viewer**: Improved reading experience for PDF documents
+
+## Installation Guide
+
+1. Navigate to your browser's profiles directory
+2. Create a new folder named `chrome`
+3. Copy all theme files into the `chrome` folder
+4. Restart your browser for changes to take effect
+
+## Required Configuration
+
+1. Access the advanced configuration page
+   - Type `about:config` in the address bar
+   - Accept the warning message
+
+2. Enable the following settings:
+
+![Required Configuration Settings](images/image-6.png)
+
+## Troubleshooting
+
+### Known Issues
+- If transparency effects aren't working, ensure your system supports composition
+- For blur-related issues, verify your graphics drivers are up to date
+
+## Credits
+- FindBar Design: Natsumi
+
+For updates and support, visit [repository link]

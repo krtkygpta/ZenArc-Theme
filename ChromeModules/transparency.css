@@ -6,7 +6,7 @@
       &:not([animate='true']) #titlebar {
         @media (-moz-bool-pref: 'zen.view.compact.color-sidebar') {
           box-shadow: none !important;
-          background: var(--zenarc-accent-color-dark-transparent) !important;
+          background: var(--zenarc-colors-transparent) !important;
           /* backdrop-filter: blur(40px) !important; */
         }
       }
@@ -31,7 +31,7 @@
 
 #browser {
   backdrop-filter: blur(--zenarc-glass-blur-radius) !important;
-  background: var(--zenarc-accent-color-dark-transparent) !important;
+  background: var(--zenarc-colors-transparent) !important;
   
   
 }

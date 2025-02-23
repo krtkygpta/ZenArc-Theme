@@ -25,7 +25,8 @@
   }
   
   #urlbar[breakout-extend="true"] > #urlbar-background {
-    background: var(--zenarc-accent-color-dark-transparent) !important;
+    background: var(--zenarc-colors-transparent) !important;
+/*     background: red !important; */
     backdrop-filter: blur(3rem) !important;
     border-radius: var(--zen-border-radius) !important;
     border-color: transparent !important;
