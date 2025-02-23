@@ -93,6 +93,22 @@ scrollbox:nth-child(5) {
     display: none !important;
   }
 }
+  #zen-current-workspace-indicator {
+  all: unset !important;
+
+  background: white !important;
+  opacity: 0.1 !important;
+  margin: 6px auto 6px !important;
+  /* border: 1px solid white !important; */
+  height: 1px !important;
+  width: 96% !important;
+  display: block !important;
+  border-radius: 50;
+
+  & * {
+    display: none !important;
+  }
+}
 
 /* Make fake separator and real separator identical */
 #vertical-pinned-tabs-container-separator {
