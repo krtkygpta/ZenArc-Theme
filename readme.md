@@ -46,11 +46,22 @@ Improved bookmark management and visualization.
 - **Enhanced PDF Viewer**: Improved reading experience for PDF documents
 
 ## Installation Guide
+1. Open Firefox and type `about:config` in the address bar
 
-1. Navigate to your browser's profiles directory
-2. Create a new folder named `chrome`
-3. Copy all theme files into the `chrome` folder
-4. Restart your browser for changes to take effect
+2. When you see the "Accept the Risk and Continue" warning, click on it
+
+3. In the search bar at the top, type or paste:  
+   `toolkit.legacyUserProfileCustomizations.stylesheets`
+
+4. Set this preference to `true` by clicking the toggle button on the right
+
+5. Now, we need to find your Firefox profile folder. Type `about:support` in the address bar
+
+6. Look for "Profile Directory" or "Profile Folder" and click the "Open Directory" button beside it
+
+7. Inside your profile folder, create a new folder called `chrome` if it doesn't already exist.
+   
+8. Paste the files from here into the folder directly
 
 ## Required Configuration
 
