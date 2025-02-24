@@ -5,20 +5,15 @@ Feel free to change these values to whatever you want, as long
 as they use the correct format.
 */
 
-* {
+:root {
   /* Accent color */
   
   --zenarc-accent-color: var(--zen-primary-color);
-  /* --zenarc-secondary-color: color-mix(in srgb, var(--zenarc-accent-colour) 80%, black); */
-  /* --zenarc-tertiary-color: color-mix(in srgb, var(--zenarc-accent-colour) 80%, white); */
-  /* zenarc Glass Effect */
-  --glass-blur-radius: 100px;
-  --glass-shadow-size: 10px;
-  --glass-shadow-opacity: 75%;
+
+  /* zenarc translucent blur Effect */
+  --translucent-blur-radius: 16px;  /* 0px to disable */
 
   /* pdf.js */
   --pdfjs-topbar-max-width: 750px; /* use calc(100% - 10px) for max width */
 
-  /* FF home */
-  --home-background-url: url('');
 }

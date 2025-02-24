@@ -184,10 +184,6 @@ Hiding Unnecessary Context Menu Items
 
 /* Credit: @jasper34 on discord */
 
-*{
-    
-}
 menupopup {
-    
     --panel-background: color-mix(in srgb, var(--zenarc-primary-color) 23%, black 74%) !important;
 }

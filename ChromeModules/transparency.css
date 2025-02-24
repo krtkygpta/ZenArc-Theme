@@ -6,8 +6,8 @@
       &:not([animate='true']) #titlebar {
         @media (-moz-bool-pref: 'zen.view.compact.color-sidebar') {
           box-shadow: none !important;
-          background: var(--zenarc-colors-transparent) !important;
-          /* backdrop-filter: blur(40px) !important; */
+          background: var(--zenarc-translucent-background) !important;
+          backdrop-filter: blur(var(--zenarc-translucent-blur-radius)) !important;
         }
       }
     }
@@ -22,7 +22,7 @@
       &:not([animate='true']) #titlebar {
         @media (-moz-bool-pref: 'zen.view.compact.color-sidebar') {
           box-shadow: none !important;
-/*           backdrop-filter: blur(--glass-blur-radius) !important; */
+/*           backdrop-filter: blur(--translucent-blur-radius) !important; */
         }
       }
     }
@@ -30,8 +30,8 @@
 }
 
 #browser {
-  backdrop-filter: blur(--zenarc-glass-blur-radius) !important;
-  background: var(--zenarc-colors-transparent) !important;
+  backdrop-filter: blur(var(--zenarc-translucent-blur-radius)) !important;
+  background: var(--zenarc-translucent-background) !important;
   
   
 }

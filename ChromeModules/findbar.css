@@ -1,31 +1,3 @@
-/*
-
-zenarc Browser - A userchrome for Zen Browser that makes things flow.
-
-Copyright (c) 2024-present Green (@greeeen-dev)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-zenarc Browser uses code from others. The link to the original projects or
-their author(s) have been provided above the used code.
-
-*/
 
 /* ==== Findbar ==== */
 
@@ -41,13 +13,13 @@ their author(s) have been provided above the used code.
   }
 }
 
-@keyframes glass-disappear {
+@keyframes translucent-disappear {
   0% {
-    backdrop-filter: blur(var(--zenarc-glass-blur-radius));
+    backdrop-filter: blur(var(--zenarc-translucent-blur-radius));
   }
 
   99% {
-    backdrop-filter: blur(var(--zenarc-glass-blur-radius));
+    backdrop-filter: blur(var(--zenarc-translucent-blur-radius));
   }
 
   100% {
@@ -66,17 +38,14 @@ their author(s) have been provided above the used code.
     height: auto !important;
     flex-wrap: wrap;
     border-radius: var(--zen-border-radius);
-    background: var(--zenarc-glass-background) !important;
-    backdrop-filter: blur(var(--zenarc-glass-blur-radius));
+    background: var(--zenarc-translucent-background) !important;
+    backdrop-filter: blur(var(--zenarc-translucent-blur-radius));
     border: 1px solid light-dark(rgba(20, 20, 20, 0.2), rgba(235, 235, 235, 0.3)) !important;
     opacity: 1;
     transition: background 0.2s ease, opacity 0.2s ease, visibility 0.2s ease, top 0.2s ease, box-shadow 0.2s ease !important;
     animation: initial-animation 0.2s ease;
 
     /*noinspection CssInvalidFunction*/
-    @media not (-moz-bool-pref: "zenarc.theme.disable-glass-shadow") {
-      box-shadow: 0 0 var(--zenarc-glass-shadow-size) color-mix(in srgb, var(--zenarc-colors-secondary) var(--zenarc-glass-shadow-opacity), light-dark(black, white)) !important;
-    }
 
     /* Restore old width */
     @media (-moz-bool-pref: "zenarc.findbar.wider-findbar") {
@@ -89,7 +58,7 @@ their author(s) have been provided above the used code.
       pointer-events: none !important;
       opacity: 0 !important;
       top: 0 !important;
-      animation: glass-disappear 0.2s linear !important;
+      animation: translucent-disappear 0.2s linear !important;
       animation-fill-mode: forwards !important;
     }
 
@@ -99,9 +68,6 @@ their author(s) have been provided above the used code.
         background: color-mix(in srgb, light-dark(rgb(255, 146, 146), rgb(255, 100, 100)) 75%, transparent) !important;
 
         /*noinspection CssInvalidFunction*/
-        @media not (-moz-bool-pref: "zenarc.theme.disable-glass-shadow") {
-          box-shadow: 0 0 10px color-mix(in srgb, light-dark(rgb(255, 146, 146), rgb(255, 100, 100)) 75%, light-dark(black, white)) !important;
-        }
       }
     }
 
@@ -129,7 +95,7 @@ their author(s) have been provided above the used code.
           content: "";
           width: 16px !important;
           min-width: 16px !important;
-          background-image: url(chrome://global/skin/icons/search-glass.svg) !important;
+          background-image: url(chrome://global/skin/icons/search-translucent.svg) !important;
           background-repeat: no-repeat;
           margin-top: 4px;
           margin-right: 15px;

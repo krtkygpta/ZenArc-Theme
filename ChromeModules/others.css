@@ -61,7 +61,7 @@
   }
   #ctrlTab-panel {
     --panel-border-radius: 24px !important;
-    --panel-background: var(--zenarc-colors-transparent) !important;
+    --panel-background: var(--zenarc-translucent-background) !important;
   }
   .ctrlTab-preview:hover {
     border: none !important;
@@ -198,3 +198,13 @@
   }
   /* Credit: @shldk on github */
   /* --Pip-- */
+
+
+  /* == Bleeding corner (heart of maubg) == */
+  @-moz-document url-prefix("chrome:") {
+  
+    .browserContainer {
+        clip-path: inset(0 round var(--zen-native-inner-radius));
+    }
+    
+  }

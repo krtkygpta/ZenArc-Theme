@@ -2,7 +2,7 @@
 
 #browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
     pointer-events: none;
-    filter: blur(10px) brightness(70%) saturate(50%) opacity(70%) !important;
+    filter: blur(1px) brightness(70%) saturate(50%) opacity(70%) !important;
     scale: 1.1 !important; /* Zoom effect, remove the // to enable */
     }
 
@@ -25,9 +25,9 @@
   }
   
   #urlbar[breakout-extend="true"] > #urlbar-background {
-    background: var(--zenarc-colors-transparent) !important;
+    background: var(--zenarc-translucent-background) !important;
 /*     background: red !important; */
-    backdrop-filter: blur(3rem) !important;
+    backdrop-filter: blur(var(--zenarc-translucent-blur-radius)) !important;
     border-radius: var(--zen-border-radius) !important;
     border-color: transparent !important;
   }
