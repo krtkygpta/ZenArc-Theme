@@ -8,6 +8,9 @@
           box-shadow: none !important;
           background: var(--zenarc-translucent-background) !important;
           backdrop-filter: blur(var(--zenarc-translucent-blur-radius)) !important;
+          &:has(#urlbar[breakout-extend="true"]){
+            backdrop-filter: none !important;
+          }
         }
       }
     }

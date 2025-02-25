@@ -9,6 +9,7 @@
 @import "ChromeModules/workspaces.css";
 @import "ChromeModules/others.css";
 @import "ChromeModules/contextMenu.css";
+@import "ChromeModules/customizer.css";
 
 #zen-sidebar-web-panel {
   max-width: 100% !important;
@@ -163,4 +164,14 @@ scrollbox:nth-child(5) {
     rgba(0, 0, 0, 0.2)
   ) !important;
 }
+
+
+menupopup {
+  --panel-background: color-mix(in srgb, var(--zenarc-primary-color) 23%, black 74%) !important;
+}
+
+}
+panel {
+    --panel-background: color-mix(in srgb, var(--zenarc-primary-color) 23%, black 74%) !important;
+
 }

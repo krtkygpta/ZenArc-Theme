@@ -10,8 +10,11 @@ as they use the correct format.
   
   --zenarc-accent-color: var(--zen-primary-color);
 
+  @media (-moz-bool-pref: "Zenarc.use-windows-accent.enabled"){
+  --zenarc-accent-color: AccentColor;
+  }
   /* zenarc translucent blur Effect */
-  --translucent-blur-radius: 16px;  /* 0px to disable */
+  --translucent-blur-radius: 10px;  /* 0px to disable */
 
   /* pdf.js */
   --pdfjs-topbar-max-width: 750px; /* use calc(100% - 10px) for max width */

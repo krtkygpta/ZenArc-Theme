@@ -31,7 +31,7 @@ Clean and intuitive address bar design.
 #### Context Menu
 Streamlined right-click menu interface.
 
-![Context Menu Design](images/image-3.png)
+![Context Menu tweaks](image.png)
 
 
 #### Bookmarks
@@ -46,22 +46,11 @@ Improved bookmark management and visualization.
 - **Enhanced PDF Viewer**: Improved reading experience for PDF documents
 
 ## Installation Guide
-1. Open Firefox and type `about:config` in the address bar
 
-2. When you see the "Accept the Risk and Continue" warning, click on it
-
-3. In the search bar at the top, type or paste:  
-   `toolkit.legacyUserProfileCustomizations.stylesheets`
-
-4. Set this preference to `true` by clicking the toggle button on the right
-
-5. Now, we need to find your Firefox profile folder. Type `about:support` in the address bar
-
-6. Look for "Profile Directory" or "Profile Folder" and click the "Open Directory" button beside it
-
-7. Inside your profile folder, create a new folder called `chrome` if it doesn't already exist.
-   
-8. Paste the files from here into the folder directly
+1. Navigate to your browser's profiles directory
+2. Create a new folder named `chrome`
+3. Copy all theme files into the `chrome` folder
+4. Restart your browser for changes to take effect
 
 ## Required Configuration
 
@@ -71,7 +60,19 @@ Improved bookmark management and visualization.
 
 2. Enable the following settings:
 
-![Required Configuration Settings](images/image-6.png)
+| Name | Value | Meaning |
+| ---- | :-----: | ------- |
+| Zenarc.audiovisual.enabled	| true	| enables audiovisualiser on tabs|
+| Zenarc.contextmenu.enabled	| true	| Enables contextmenu tweaks |
+| Zenarc.loadingbar.enabled	| true	| Loading bar |
+| Zenarc.sidebar-tweaks.enabled	| true	| All tab/sidebar related tweaks |
+| Zenarc.use-windows-accent.enabled | true| Use OS accent as Zen-accent |
+
+## Configs You can / should edit
+
+1. go to 'chrome' folder
+2. open 'config.css'
+3. edit
 
 ## Troubleshooting
 
@@ -79,7 +80,3 @@ Improved bookmark management and visualization.
 - If transparency effects aren't working, ensure your system supports composition
 - For blur-related issues, verify your graphics drivers are up to date
 
-## Credits
-- FindBar Design: Natsumi
-
-For updates and support, visit [repository link]
