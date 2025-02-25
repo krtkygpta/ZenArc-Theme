@@ -31,5 +31,8 @@
 
   /* translucent effect */
   --zenarc-translucent-background: color-mix(in srgb, var(--zenarc-colors-secondary) 75%, transparent);
+  @media (-moz-bool-pref: 'Zenarc.colors.use-gradient-theme.enabled'){
+    --zenarc-translucent-background: var(--zen-main-browser-background);
+  }
   --zenarc-translucent-blur-radius: var(--translucent-blur-radius, 10px);
 }
