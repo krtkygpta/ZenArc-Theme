@@ -49,8 +49,10 @@ Improved bookmark management and visualization.
 
 1. Navigate to your browser's profiles directory
 2. Create a new folder named `chrome`
-3. Copy all theme files into the `chrome` folder
-4. Restart your browser for changes to take effect
+3. Copy all theme files into the `chrome` folder from The ZenArc folder
+4. Create a new file in `chrome` as `userChrome.css`
+5. in `userChrome.css` ass "@import url("ZenArc v1.2/ZenArc.css");"
+6. Restart your browser for changes to take effect
 
 ## Required Configuration
 
