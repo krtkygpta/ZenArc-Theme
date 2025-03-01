@@ -63,9 +63,6 @@ Improved bookmark management and visualization.
 | Name | Value | Meaning |
 | ---- | :-----: | ------- |
 | Zenarc.audiovisual.enabled	| true	| enables audiovisualiser on tabs|
-| Zenarc.contextmenu.enabled	| true	| Enables contextmenu tweaks |
-| Zenarc.loadingbar.enabled	| true	| Loading bar |
-| Zenarc.sidebar-tweaks.enabled	| true	| All tab/sidebar related tweaks |
 | Zenarc.use-windows-accent.enabled | true| Use OS accent as Zen-accent |
 
 ## Configs You can / should edit
