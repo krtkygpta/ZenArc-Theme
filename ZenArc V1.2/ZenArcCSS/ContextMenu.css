@@ -1,0 +1,171 @@
+
+    #context-savepage,
+    #context-sendpagetodevice,
+    #context-selectall,
+    #context-sep-selectall,
+    #ublock0_raymondhill_net-menuitem-_uBlock0-blockElement,
+    #context-print-selection,
+    #context-translate-selection,
+    #context-searchselect-private,
+    #context-openlinkinusercontext-menu,
+    #context-openlink,
+    #context-openlinkprivate,
+    #context-zenSplitLink,
+    #context-savelink,
+    #context-stripOnShareLink[disabled="true"],
+    #context-zenAddToWebPanel,
+    #context-sendimage,
+    #context-setDesktopBackground,
+    #context-sep-setbackground,
+    #context-sep-sharing,
+    #context-sep-screenshots,
+    #context-media-eme-separator,
+    #context-viewvideo,
+    #context-video-pictureinpicture,
+    #context-media-sep-video-commands,
+    #context-savevideo[disabled="true"],
+    #context-copyvideourl[disabled="true"],
+    #context-sendvideo,
+    #context-video-fullscreen,
+    #context-leave-dom-fullscreen,
+    #context-media-loop,
+    #context-media-playbackrate > .menu-right,
+    #context-sep-open,
+    #context-sep-sendlinktodevice {
+        visibility: collapse !important;
+    }
+
+    /* Sidebar tab options */
+    #context_openANewTab,
+    #context_moveTabOptions,
+    #context_reopenInContainer,
+    #context_selectAllTabs,
+    #context_closeTabOptions,
+    #context_undoCloseTab,
+    #context_closeDuplicateTabs[disabled="true"],
+    #context_zenSplitTabs[disabled="true"],
+/*     #context_closeTab, */
+
+    /* Sidebar toolbar options */
+    #toggle_toolbar-menubar,
+    #zen-toolbar-context-tabs-right,
+    #toolbar-context-undoCloseTab,
+    #toolbar-context-selectAllTabs,
+    #toolbar-context-bookmarkSelectedTab,
+    #toolbar-context-bookmarkSelectedTabs,
+    #toolbar-context-reloadSelectedTab,
+    #toolbar-context-reloadSelectedTabs,
+    #viewToolbarsMenuSeparator,
+    #toolbarItemsMenuSeparator,
+    #toolbarNavigatorItemsMenuSeparator {
+        visibility: collapse !important;
+    }
+
+    /* =========================
+    Custom Styling for Context Menu Buttons
+    ========================= */
+
+    #tabContextMenu, /* Video Context Menu */
+    #contentAreaContextMenu /* Tabs Context Menu */ {
+        --num-of-buttons-in-menu: 4;
+        --translation-factor: calc(var(--panel-width, 261px) / var(--num-of-buttons-in-menu));
+        --button-width: calc(var(--translation-factor) - 8px);
+        --button-height: 40px;
+        --button-bg-color-hover: color-mix(in srgb, white 7%, var(--arrowpanel-background) 93%);
+        --button-bg-color-active: color-mix(in srgb, white 12%, var(--arrowpanel-background) 88%);
+
+        --zen-appcontent-border: transparent 1px solid;
+
+        width: var(--menu-width) !important;
+    }
+
+    /* Style for menu separators */
+    menuseparator {
+        &::before {
+            opacity: 0.3;
+        }
+
+        /* Hide the first separator */
+        &:first-of-type {
+            display: none !important;
+        }
+    }
+
+    /* =========================
+    Button Transformation and Order
+    ========================= */
+
+    /* General styling for buttons */
+
+    #context_reloadTab,
+    #context_duplicateTab,
+    #context_toggleMuteTab,
+    #context_bookmarkTab,
+    #context-media-pause,
+    #context-media-mute,
+    #context-media-unmute,
+    #context-media-playbackrate,
+    #context-media-showcontrols,
+    #context-media-hidecontrols,
+    #context-openlinkincontainertab,
+    #context-bookmarklink,
+    #context-savelinktopocket,
+    #context-copylink,
+    #context-viewimage,
+    #context-saveimage,
+    #context-copyimage-contents,
+    #context-copyimage {
+        transform: translate(calc(var(--translation-factor) * var(--tab-index) + 1px), 0px);
+        order: calc(-20 + var(--tab-index));
+        margin-top: calc(0px - var(--button-height));
+        margin-bottom: 0px;
+        width: var(--button-width);
+        height: var(--button-height);
+        background-color: var(--button-bg-color);
+        background-position: center !important;
+
+        & .menu-text {
+            display: none !important;
+        }
+
+        &:hover {
+            background-color: var(--button-bg-color-hover) !important;
+        }
+
+        &:active {
+            background-color: var(--button-bg-color-active) !important;
+        }
+    }
+
+    /* Individual button ordering */
+
+    /* Tab actions */
+    #context_reloadTab { --tab-index: 0; margin-top: 0px; }
+    #context_duplicateTab { --tab-index: 1; }
+    #context_toggleMuteTab { --tab-index: 2; }
+    #context_bookmarkTab { --tab-index: 3; }
+
+    /* Video controls */
+    #context-media-pause { --tab-index: 0; margin-top: 0px; }
+    #context-media-mute { --tab-index: 1; }
+    #context-media-unmute { --tab-index: 1; }
+    #context-media-playbackrate { --tab-index: 2; }
+    #context-media-showcontrols { --tab-index: 3; }
+    #context-media-hidecontrols { --tab-index: 3; }
+
+    /* Link actions */
+    #context-openlinkincontainertab { --tab-index: 0; margin-top: 0px; }
+    #context-bookmarklink { --tab-index: 1; }
+    #context-savelinktopocket { --tab-index: 2; }
+    #context-copylink { --tab-index: 3; }
+
+    /* Image actions */
+    #context-viewimage { --tab-index: 0; order: -16; margin-top: 0px; }
+    #context-saveimage { --tab-index: 1; order: -15; }
+    #context-copyimage-contents { --tab-index: 2; order: -14; }
+    #context-copyimage { --tab-index: 3; order: -13; }
+
+    menupopup,
+    panel {
+        --panel-background: color-mix(in srgb, var(--zenarc-primary-color) 23%, black 74%) !important;
+    }

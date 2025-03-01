@@ -1,0 +1,18 @@
+@import "configs.css";
+
+
+@import "ZenArcCSS/AudioVisuals.css";
+@import "ZenArcCSS/BrowserBase.css";
+@import "ZenArcCSS/ContextMenu.css";
+@import "ZenArcCSS/Customizer.css";
+@import "ZenArcCSS/Findbar.css";
+@import "ZenArcCSS/IconChanger.css";
+@import "ZenArcCSS/SearchBox.css";
+@import "ZenArcCSS/Tabs.css";
+@import "ZenArcCSS/TabsSwitcher.css";
+@import "ZenArcCSS/WorkspaceButton.css";
+
+menupopup,
+panel {
+    --panel-background: color-mix(in srgb, var(--zenarc-primary-color) 23%, black 74%) !important;
+}
