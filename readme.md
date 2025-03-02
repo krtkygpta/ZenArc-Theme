@@ -47,12 +47,30 @@ Improved bookmark management and visualization.
 
 ## Installation Guide
 
-1. Navigate to your browser's profiles directory
-2. Create a new folder named `chrome`
-3. Copy all theme files into the `chrome` folder from The ZenArc folder
-4. Create a new file in `chrome` as `userChrome.css`
-5. in `userChrome.css` ass "@import url("ZenArc v1.2/ZenArc.css");"
-6. Restart your browser for changes to take effect
+Follow these steps to install the Zen theme in your browser:
+
+1.  Locate Your Browser's Profile Directory:
+    *   In your browser's address bar, type about:profiles and press Enter.
+    *   Find the profile you're currently using.
+    *   Click the "Open Folder" button for your profiles root directory.
+2.  Access or Create the chrome Folder:
+    *   Inside your profile directory, check if a folder named chrome exists.
+    *   If it doesn't exist, create a new folder and name it chrome.
+3.  Install the ZenArc Theme:
+    *   Copy the entire "ZenArc V1.2" folder into the chrome folder.
+4.  Edit or Create userChrome.css:
+    *   Inside the chrome folder, check if a file named userChrome.css exists.
+    *   If it doesn't exist, create a new text file and rename it to userChrome.css.
+    *   Open userChrome.css in a text editor.
+    *   Add the following line to the file:
+
+        
+css
+        @import url("ZenArc V1.2/ZenArc.css");
+        
+5.  Restart Your Browser:
+    *   Close and reopen your browser for the changes to take effect.
+6.  Enjoy!
 
 ## Required Configuration
 
