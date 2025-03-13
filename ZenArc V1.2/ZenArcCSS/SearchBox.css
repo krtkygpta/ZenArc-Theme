@@ -89,3 +89,23 @@
     --urlbarView-item-inline-padding: 8px !important;
     --urlbarView-item-block-padding: 12px !important;
   }
+#browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
+
+
+    pointer-events: none;
+
+
+    filter: blur(8px) brightness(70%) saturate(100%) opacity(100%) !important;
+
+
+    scale: 1.1 !important; /* Zoom effect, remove the // to enable */
+
+
+    }
+ #browser .browserContainer {
+
+
+  transition: all 0.1s ease-in-out !important;
+
+
+  } 

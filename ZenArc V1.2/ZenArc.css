@@ -16,3 +16,10 @@ menupopup,
 panel {
     --panel-background: color-mix(in srgb, var(--zenarc-primary-color) 23%, black 74%) !important;
 }
+.tab-audio-button{
+  display: none !important;
+}
+.unified-extensions-item{
+  width: max-content !important;
+  background: none !important;
+}

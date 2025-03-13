@@ -1,7 +1,7 @@
 
 :root {
     /* Accent color */
-    --zenarc-accent-color: var(--zen-primary-color);
+    --zenarc-accent-color: var(--zen-primary-color, AccentColor);
   
     @media (-moz-bool-pref: "Zenarc.use-windows-accent.enabled"){
     --zenarc-accent-color: AccentColor;
