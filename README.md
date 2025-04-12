@@ -63,7 +63,7 @@ Follow these steps to install the Zen theme in your browser:
     *   Open userChrome.css in a text editor.
     *   Add the following line to the file:
         ```css
-        @import url("ZenArc V1.2/ZenArc.css");
+        @import url("ZenArc V1.5/ZenArc.css");
         ```
 4.  Install the ZenArc Theme:
     *   Move the "ZenArc V1.2" folder into the chrome folder next to userChrome.css file.
