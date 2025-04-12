@@ -1,0 +1,31 @@
+@import "configs.css";
+
+
+@import "ZenArcCSS/AudioVisuals.css";
+@import "ZenArcCSS/BrowserBase.css";
+@import "ZenArcCSS/ContextMenu.css";
+@import "ZenArcCSS/Customizer.css";
+@import "ZenArcCSS/Findbar.css";
+@import "ZenArcCSS/IconChanger.css";
+@import "ZenArcCSS/SearchBox.css";
+@import "ZenArcCSS/Tabs.css";
+@import "ZenArcCSS/TabsSwitcher.css";
+@import "ZenArcCSS/WorkspaceButton.css";
+@import "ZenArcCSS/miniplayer.css";
+@import "ZenArcCSS/PinnedExtensions.css";
+
+menupopup,
+panel {
+    background-color: color-mix(in srgb, var(--zenarc-primary-color) 10%, transparent) !important;
+  
+}
+*{
+  --border-radius-medium: 16px !important;
+}
+.tab-audio-button{
+  display: none !important;
+}
+.unified-extensions-item{
+  width: max-content !important;
+  background: none !important;
+}
